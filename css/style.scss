@@ -299,8 +299,8 @@ body {
         }
     }
 }
-@media all and (max-height: 750px){
-    .page-wrapper {
+.height550 {
+    &.page-wrapper {
         .page-inner {
             padding: 20px;
         }
@@ -338,8 +338,8 @@ body {
         }
     }
 }
-@media all and (max-height: 550px){
-    .page-wrapper {
+.height750 {
+    &.page-wrapper {
         .page-inner {
             padding: 15px;
         }

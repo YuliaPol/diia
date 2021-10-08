@@ -399,53 +399,59 @@ body {
   transition: width 0.3s ease-in;
 }
 
-@media all and (max-height: 750px) {
-  .page-wrapper .page-inner {
-    padding: 20px;
-  }
-  .page-wrapper .logo {
-    max-width: 100px;
-    height: 60px;
-  }
-  .page-wrapper .survey-btm {
-    height: 20px;
-  }
-  .page-wrapper .survey-page .questions-list .question-wrap .name {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item {
-    padding-bottom: 15px;
-  }
-  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item label {
-    font-size: 12px;
-    line-height: 15px;
-    min-height: 45px;
-  }
+.height550.page-wrapper .page-inner {
+  padding: 20px;
 }
 
-@media all and (max-height: 550px) {
-  .page-wrapper .page-inner {
-    padding: 15px;
-  }
-  .page-wrapper .logo {
-    max-width: 80px;
-    height: 50px;
-  }
-  .page-wrapper .survey-btm {
-    height: 20px;
-  }
-  .page-wrapper .survey-page .questions-list .question-wrap .name {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item {
-    padding-bottom: 10px;
-  }
-  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item label {
-    font-size: 12px;
-    line-height: 14px;
-    min-height: 40px;
-  }
+.height550.page-wrapper .logo {
+  max-width: 100px;
+  height: 60px;
+}
+
+.height550.page-wrapper .survey-btm {
+  height: 20px;
+}
+
+.height550.page-wrapper .survey-page .questions-list .question-wrap .name {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.height550.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item {
+  padding-bottom: 15px;
+}
+
+.height550.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item label {
+  font-size: 12px;
+  line-height: 15px;
+  min-height: 45px;
+}
+
+.height750.page-wrapper .page-inner {
+  padding: 15px;
+}
+
+.height750.page-wrapper .logo {
+  max-width: 80px;
+  height: 50px;
+}
+
+.height750.page-wrapper .survey-btm {
+  height: 20px;
+}
+
+.height750.page-wrapper .survey-page .questions-list .question-wrap .name {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.height750.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item {
+  padding-bottom: 10px;
+}
+
+.height750.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item label {
+  font-size: 12px;
+  line-height: 14px;
+  min-height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
