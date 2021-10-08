@@ -70,7 +70,9 @@ body {
     max-width: 450px;
     margin: auto;
     width: 100%;
+    height: -webkit-fill-available;
     height: 100%;
+    height: calc(100vh - calc(100vh - 100%));
     overflow: auto;
     background: #fff;
     position: relative;
