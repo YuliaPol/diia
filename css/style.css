@@ -1,0 +1,447 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "e-Ukraine", Helvetica, Arial;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+}
+
+html,
+body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  height: -webkit-fill-available;
+  min-height: initial;
+  background: #E5E5E5;
+}
+
+.page-wrapper {
+  max-width: 450px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #fff;
+  position: relative;
+}
+
+.page-wrapper .page-inner {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+
+.page-wrapper .logo {
+  max-width: 180px;
+}
+
+.page-wrapper .logo img {
+  width: 100%;
+}
+
+.page-wrapper .start-page {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-wrapper .start-page .text-block {
+  max-width: 373px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-wrapper .start-page .text-block .top-text {
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.page-wrapper .start-page .text-block .btm-text {
+  padding-top: 40px;
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+
+.page-wrapper .start-page .btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.page-wrapper .start-page .btn .btn-active {
+  background: -webkit-linear-gradient(5.7deg, #007EFF 8.58%, #D7F64D 88.87%);
+  background: -o-linear-gradient(5.7deg, #007EFF 8.58%, #D7F64D 88.87%);
+  background: linear-gradient(84.3deg, #007EFF 8.58%, #D7F64D 88.87%);
+  border-radius: 27px;
+  padding: 20px 70px;
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  outline: none;
+}
+
+.page-wrapper .survey-content {
+  width: 100%;
+}
+
+.page-wrapper .survey-page {
+  position: relative;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-wrapper .survey-page .owl-stage {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-wrapper .survey-page .owl-item {
+  height: 0;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  overflow: hidden;
+}
+
+.page-wrapper .survey-page .owl-item.active {
+  height: auto;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap {
+  padding: 10px;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .name {
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list {
+  padding-top: 20px;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item {
+  padding-bottom: 20px;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item input[type=radio],
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item input[type=checkbox] {
+  display: none;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item input[type=radio]:checked ~ label,
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item input[type=checkbox]:checked ~ label {
+  color: #FFFFFF;
+  border-color: #fff;
+  background-position: left;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item p {
+  padding: 20px;
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  outline: none;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item textarea {
+  padding: 20px;
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  outline: none;
+  width: 100%;
+  border: none;
+  resize: none;
+  border-bottom: 0.8px solid #000000;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item label {
+  border: 0.8px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 27px;
+  padding: 10px 20px;
+  min-width: 225px;
+  min-height: 55px;
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-linear-gradient(5.7deg, #007EFF 3%, #D7F64D 35%, #fff 70%, #fff 100%);
+  background: -o-linear-gradient(5.7deg, #007EFF 3%, #D7F64D 35%, #fff 70%, #fff 100%);
+  background: linear-gradient(84.3deg, #007EFF 3%, #D7F64D 35%, #fff 70%, #fff 100%);
+  background-position: right;
+  -webkit-background-size: 300% 100%;
+          background-size: 300% 100%;
+  -webkit-transition: background-position 0.3s ease-in, border-color 0.3s, color 0.3s;
+  -o-transition: background-position 0.3s ease-in, border-color 0.3s, color 0.3s;
+  transition: background-position 0.3s ease-in, border-color 0.3s, color 0.3s;
+}
+
+.page-wrapper .survey-page .questions-list .question-wrap .answers-wd-100 .answer-item label {
+  width: 100%;
+}
+
+.page-wrapper .survey-page .questions-list .btn-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.page-wrapper .survey-page .questions-list .btn-wrap .btn-next {
+  background: -webkit-linear-gradient(5.7deg, #007EFF 8.58%, #D7F64D 88.87%);
+  background: -o-linear-gradient(5.7deg, #007EFF 8.58%, #D7F64D 88.87%);
+  background: linear-gradient(84.3deg, #007EFF 8.58%, #D7F64D 88.87%);
+  border-radius: 27px;
+  padding: 20px 70px;
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  outline: none;
+  max-width: 255px;
+  cursor: pointer;
+  display: none;
+  border: none;
+}
+
+.page-wrapper .survey-page .questions-list .hidden {
+  display: none;
+  width: 0px;
+  max-width: 0px;
+}
+
+.page-wrapper .survey-btm {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  width: 100%;
+}
+
+.page-wrapper .survey-btm .line {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #0C0005;
+  border-radius: 20.5px;
+  height: 5px;
+  -webkit-transition: width 0.3s ease-in;
+  -o-transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in;
+}
+
+@media all and (max-height: 750px) {
+  .page-wrapper .page-inner {
+    padding: 20px;
+  }
+  .page-wrapper .logo {
+    max-width: 100px;
+    height: 60px;
+  }
+  .page-wrapper .survey-btm {
+    height: 20px;
+  }
+  .page-wrapper .survey-page .questions-list .question-wrap .name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item {
+    padding-bottom: 15px;
+  }
+  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item label {
+    font-size: 12px;
+    line-height: 15px;
+    min-height: 45px;
+  }
+}
+
+@media all and (max-height: 550px) {
+  .page-wrapper .page-inner {
+    padding: 15px;
+  }
+  .page-wrapper .logo {
+    max-width: 80px;
+    height: 50px;
+  }
+  .page-wrapper .survey-btm {
+    height: 20px;
+  }
+  .page-wrapper .survey-page .questions-list .question-wrap .name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item {
+    padding-bottom: 10px;
+  }
+  .page-wrapper .survey-page .questions-list .question-wrap .answers-list .answer-item label {
+    font-size: 12px;
+    line-height: 14px;
+    min-height: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

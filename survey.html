@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дія: Державні послуги онлайн</title>
+
+    <link rel="stylesheet" href="./font/e-Ukraine/stylesheet.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="page-inner">
+            <div class="survey-page">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="Logo">
+                </div>
+                <div class="survey-content">
+                    <form action="#">
+                        <div class="questions-list owl-carousel">
+                            <div class="question-wrap main-question" data-index="1">
+                                <div class="name">
+                                    Як ви загалом оцінюєте якість надання державної послуги?
+                                </div>
+                                <div class="answers-list">
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-1" id="q-1-1" data-value="1" value="Чудово">
+                                        <label for="q-1-1">Чудово</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-1" id="q-1-2" data-value="2" value="Добре">
+                                        <label for="q-1-2">Добре</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-1" id="q-1-3" data-value="3" value="Прийнятно">
+                                        <label for="q-1-3">Прийнятно</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-1" id="q-1-4" data-value="4" value="Жахливо">
+                                        <label for="q-1-4">Жахливо</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-1" id="q-1-5" data-value="5" value="Складно відповісти">
+                                        <label for="q-1-5">Складно відповісти</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="2">
+                                <div class="name">
+                                    Чи комфортно ви почувалися в приміщенні
+                                </div>
+                                <div class="answers-list">
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-2" id="q-2-1" data-hideNext="true" value="Чудово">
+                                        <label for="q-2-1">Чудово</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-2" id="q-2-2" data-hideNext="true" value="Добре">
+                                        <label for="q-2-2">Добре</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-2" id="q-2-3" value="Прийнятно">
+                                        <label for="q-2-3">Прийнятно</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-2" id="q-2-4" value="Жахливо">
+                                        <label for="q-2-4">Жахливо</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-2" id="q-2-5" data-hideNext="true" value="Складно відповісти">
+                                        <label for="q-2-5">Складно відповісти</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="3">
+                                <div class="name">
+                                    Будь ласка, поясніть, чому вам не сподобалося місце надання послуги
+                                </div>
+                                <div class="answers-list answers-wd-100">
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-3-1" id="q-3-1"
+                                            value="у приміщенні немає умов для людей з інвалідністю та осіб похилого віку">
+                                        <label for="q-3-1">
+                                            у приміщенні немає умов для людей з інвалідністю та осіб похилого віку
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-3-2" id="q-3-2" value="приміщення не адаптоване для батьків із дітьми">
+                                        <label for="q-3-2">
+                                            приміщення не адаптоване для батьків із дітьми
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-3-3" id="q-3-3" value="у приміщенні тісно">
+                                        <label for="q-3-3">
+                                            у приміщенні тісно
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-3-4" id="q-3-4" value="у приміщенні брудно">
+                                        <label for="q-3-4">
+                                            у приміщенні брудно
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-3-5" id="q-3-5" value="некомфортна температура">
+                                        <label for="q-3-5">
+                                            некомфортна температура
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-3-6" id="q-3-6" value="бракує місць для сидіння">
+                                        <label for="q-3-6">
+                                            бракує місць для сидіння
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <textarea name="q-3-7" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <div class="btn-next">
+                                        Далі
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="4">
+                                <div class="name">
+                                    Чи якісно організовано процес надання послуги?
+                                </div>
+                                <div class="answers-list">
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-4" id="q-4-1" data-hideNext="true" value="Чудово">
+                                        <label for="q-4-1">Чудово</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-4" id="q-4-2" data-hideNext="true" value="Добре">
+                                        <label for="q-4-2">Добре</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-4" id="q-4-3" value="Прийнятно">
+                                        <label for="q-4-3">Прийнятно</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-4" id="q-4-4" value="Жахливо">
+                                        <label for="q-4-4">Жахливо</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-4" id="q-4-5" data-hideNext="true" value="Складно відповісти">
+                                        <label for="q-4-5">Складно відповісти</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="5">
+                                <div class="name">
+                                    Будь ласка, поясніть, що саме вам не сподобалося
+                                </div>
+                                <div class="answers-list answers-wd-100">
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-1" id="q-5-1"
+                                            value="бракує інформації про послугу">
+                                        <label for="q-5-1">
+                                            бракує інформації про послугу
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-2" id="q-5-2" value="складно сприймати інформацію">
+                                        <label for="q-5-2">
+                                            складно сприймати інформацію
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-3" id="q-5-3" value="незручно записатись на приймання">
+                                        <label for="q-5-3">
+                                            незручно записатись на приймання
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-4" id="q-5-4" value="незручно сплачувати за послуги">
+                                        <label for="q-5-4">
+                                            незручно сплачувати за послуги
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-5" id="q-5-5" value="довга черга">
+                                        <label for="q-5-5">
+                                            довга черга
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-6" id="q-5-6" value="тривале обслуговування">
+                                        <label for="q-5-6">
+                                            тривале обслуговування
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-7" id="q-5-7" value="вимагають багато документів">
+                                        <label for="q-5-7">
+                                            вимагають багато документів
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-5-8" id="q-5-8" value="надають послуги невчасно">
+                                        <label for="q-5-8">
+                                            надають послуги невчасно
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <textarea name="q-5-9" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <div class="btn-next">
+                                        Далі
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="6">
+                                <div class="name">
+                                    Як виконали свою роботу працівники?
+                                </div>
+                                <div class="answers-list">
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-6" id="q-6-1" data-hideNext="true" value="Чудово">
+                                        <label for="q-6-1">Чудово</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-6" id="q-6-2" data-hideNext="true" value="Добре">
+                                        <label for="q-6-2">Добре</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-6" id="q-6-3" value="Прийнятно">
+                                        <label for="q-6-3">Прийнятно</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-6" id="q-6-4" value="Жахливо">
+                                        <label for="q-6-4">Жахливо</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-6" id="q-6-5" data-hideNext="true" value="Складно відповісти">
+                                        <label for="q-6-5">Складно відповісти</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="7">
+                                <div class="name">
+                                    Будь ласка, поясніть, чому вам не сподобалася робота персоналу
+                                </div>
+                                <div class="answers-list answers-wd-100">
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-7-1" id="q-7-1"
+                                            value="працівник був неохайним">
+                                        <label for="q-7-1">
+                                            працівник був неохайним
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-7-2" id="q-7-2" value="працівник не був ввічливим">
+                                        <label for="q-7-2">
+                                            працівник не був ввічливим
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="checkbox" name="q-7-3" id="q-7-3" value="працівник відповів не на всі запитання щодо послуги">
+                                        <label for="q-7-3">
+                                            працівник відповів не на всі запитання щодо послуги
+                                        </label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <textarea name="q-7-4" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <div class="btn-next">
+                                        Далі
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="8">
+                                <div class="name">
+                                    Як ви оцінюєте перелік доступних послуг у /назва фронт-офісу/? 
+                                </div>
+                                <div class="answers-list">
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-8" id="q-8-1" data-hideNext="true" value="Чудово">
+                                        <label for="q-8-1">Чудово</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-8" id="q-8-2" data-hideNext="true" value="Добре">
+                                        <label for="q-8-2">Добре</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-8" id="q-8-3" value="Прийнятно">
+                                        <label for="q-8-3">Прийнятно</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-8" id="q-8-4" value="Жахливо">
+                                        <label for="q-8-4">Жахливо</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-8" id="q-8-5" data-hideNext="true" value="Складно відповісти">
+                                        <label for="q-8-5">Складно відповісти</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="9">
+                                <div class="name">
+                                    Будь ласка, вкажіть, чому вас не задовольнив перелік послуг
+                                </div>
+                                <div class="answers-list answers-wd-100">
+                                    <div class="answer-item">
+                                        <p>Відсутня потрібна послуга</p>
+                                        <textarea name="q-9-1" rows="1" placeholder="Зазначте, яку або які"></textarea>
+                                    </div>
+                                    <div class="answer-item">
+                                        <textarea name="q-9-2" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <div class="btn-next">
+                                        Далі
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="10">
+                                <div class="name">
+                                    Чи порекомендуєте ви /назва фронт-офісу/, як основне місце для отримання державних послуг, родичам, друзям, знайомим?
+                                </div>
+                                <div class="answers-list">
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-0">
+                                        <label for="q-10-0">0</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-1">
+                                        <label for="q-10-1">1</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-2">
+                                        <label for="q-10-2">2</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-3">
+                                        <label for="q-10-3">3</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-4">
+                                        <label for="q-10-4">4</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-5">
+                                        <label for="q-10-5">5</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-6">
+                                        <label for="q-10-6">6</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-7">
+                                        <label for="q-10-7">7</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-8">
+                                        <label for="q-10-8">8</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-9">
+                                        <label for="q-10-9">9</label>
+                                    </div>
+                                    <div class="answer-item">
+                                        <input type="radio" name="q-10" id="q-10-10">
+                                        <label for="q-10-10">10</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-wrap hidden" data-index="11">
+                                <div class="name">
+                                    Розкажіть про свої враження від державного сервісу, якщо хочете. Цим ви допоможете покращити роботу /назва фронт-офісу/
+                                </div>
+                                <div class="answers-list answers-wd-100">
+                                    <div class="answer-item">
+                                        <textarea name="q-10" rows="1" placeholder="Зазначте"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button class="btn-next">
+                                        Далі
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="survey-btm">
+                    <div class="line progress-line" style="width: 16%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
