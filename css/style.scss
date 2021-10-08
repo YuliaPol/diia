@@ -159,6 +159,53 @@ body {
     }
     .survey-content {
         width: 100%;
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        form {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact-list.owl-carousel {
+            flex: 1 0 auto;
+            display: flex;
+            &.owl-carousel {
+                .question-wrap {
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    position: relative;
+                    padding-bottom: 80px;
+                    .btn-wrap {
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        right: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .owl-stage {
+            flex: 1 0 auto;
+            display: flex;
+            height: 100%;
+        }
+        .owl-item.active {
+            height: 100% !important;
+        }
+        .owl-item {
+            flex: 1 0 auto;
+            display: flex;
+            height: 100%;
+        }
+        .question-wrap {
+            flex: 1 0 auto;
+        }
     }
     .survey-page {
         position: relative;
@@ -196,6 +243,7 @@ body {
                 // overflow: auto;
                 padding: 5px;
                 transition: opacity 0.3s ease-in;
+                max-width: 100%;
                 .name {
                     font-family: $fontPage;
                     font-style: normal;
@@ -208,6 +256,7 @@ body {
                 .answers-list {
                     padding-top: 20px;
                     pointer-events: auto !important;
+                    width: 100%;
                     .sub-answer {
                         width: 100%;
                         max-width: 100%;
@@ -351,7 +400,7 @@ body {
                     text-transform: none;
                     outline: none;
                     max-width: 255px;
-                    min-width: 200px;
+                    min-width: 250px;
                     cursor: pointer;
                     display: none;
                     border: none;

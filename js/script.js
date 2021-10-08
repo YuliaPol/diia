@@ -167,10 +167,18 @@ jQuery(function ($) {
         });
 
         $('.contact-list').on('change', 'input', function(e){
-            $(this).parents('.contact-list').find('.btn-next').html('Надіслати');
+            if($(this).parents('.owl-carousel').length === 0){
+                $(this).parents('.contact-list').find('.btn-next').html('Надіслати');
+            } else {
+                $(this).parents('.question-wrap').find('.btn-next').html('Надіслати');
+            }
         });
         $('.contact-list').on('change', 'textarea', function(e){
-            $(this).parents('.contact-list').find('.btn-next').html('Надіслати');
+            if($(this).parents('.owl-carousel').length === 0){
+                $(this).parents('.contact-list').find('.btn-next').html('Надіслати');
+            } else {
+                $(this).parents('.question-wrap').find('.btn-next').html('Надіслати');
+            }
         })
 
     });
