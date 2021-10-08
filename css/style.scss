@@ -80,7 +80,7 @@ body {
         width: 100%;
         height: 100%;
         overflow-y: auto;
-        padding: 40px 35px;
+        padding: 40px 35px 20px;
     }
     .logo {
         max-width: 180px;
@@ -149,12 +149,47 @@ body {
         }
     }
     .last-page {
-        justify-content: center;
-        .logo {
-            position: absolute;
-            top: 40px;
-            left: 35px;
-            right: 35px;
+        justify-content: space-between;
+        .footer {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            .btns-app {
+                a {
+                    width: 128px;
+                    height: 40px;
+                    margin-bottom: 20px;
+                    outline: none;
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: block;
+                    &.store-apple {
+                        background: url(./../img/btn-app-store.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    &.store-google {
+                        background: url(./../img/btn-google-pay.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    &.store-app-gallery {
+                        background: url(./../img/btn-app-gallery.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+            .footer-logo {
+                width: 115px;
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
     .survey-content {

@@ -90,7 +90,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  padding: 40px 35px;
+  padding: 40px 35px 20px;
 }
 
 .page-wrapper .logo {
@@ -197,17 +197,68 @@ body {
 }
 
 .page-wrapper .last-page {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.page-wrapper .last-page .logo {
-  position: absolute;
-  top: 40px;
-  left: 35px;
-  right: 35px;
+.page-wrapper .last-page .footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.page-wrapper .last-page .footer .btns-app a {
+  width: 128px;
+  height: 40px;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.page-wrapper .last-page .footer .btns-app a.store-apple {
+  background: url(./../img/btn-app-store.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper .last-page .footer .btns-app a.store-google {
+  background: url(./../img/btn-google-pay.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper .last-page .footer .btns-app a.store-app-gallery {
+  background: url(./../img/btn-app-gallery.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper .last-page .footer .footer-logo {
+  width: 115px;
+}
+
+.page-wrapper .last-page .footer .footer-logo img {
+  width: 100%;
 }
 
 .page-wrapper .survey-content {

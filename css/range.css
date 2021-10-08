@@ -48,7 +48,7 @@
       -webkit-mask: var(--svg) /var(--sw) 24px, linear-gradient(to right, #fff calc(50% - var(--sw)/2 + 2px), transparent 0 calc(50% + var(--sw)/2 - 2px), #fff 0) right var(--p) top 16px/calc(200% - var(--sw)) 8px;
       -webkit-mask-repeat: no-repeat;
       /* background: #a3a3a3; */
-      background: linear-gradient(125deg, #BA1417 0%, #CD0800 9.38%, #F45800 18.75%, #FD9113 27.6%, #FFB800 38.02%, #D7E317 48.44%, #D1E01F 60.94%, #EAF65E 71.88%, #00D086 82.29%, #00AB23 91.15%, #056719 100%);
+      background: linear-gradient(125deg, rgb(204, 46, 79) 0%, rgb(230, 90, 52) 9.38%, rgb(255, 132, 27) 18.75%, rgb(255, 174, 51) 27.6%, rgb(255, 218, 76) 38.02%, rgb(236, 232, 77) 48.44%, rgb(216, 245, 77) 60.94%, rgb(179, 233, 65) 71.88%, rgb(140, 220, 52) 82.29%, rgb(76, 209, 70) 91.15%, rgb(4, 198, 93) 100%);
       z-index: 999;
     }
     

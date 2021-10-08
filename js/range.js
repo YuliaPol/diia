@@ -4,6 +4,18 @@ let range3Indecator = null;
 let range4Indecator = null;
 let lastRangChanged = 0;
 
+let color0 = '#CC2E4F';
+let color1 = '#e65a34';
+let color2 = '#ff841b';
+let color3 = '#ffae33';
+let color4 = '#ffda4c';
+let color5 = '#ece84d';
+let color6 = '#d8f54d';
+let color7 = '#b3e941';
+let color8 = '#8cdc34';
+let color9 = '#4cd146';
+let color10 = '#04C65D';
+
 // Position of span that shows range value and tick curve position
 const tickContainer = document.querySelector('#range-wrapp-1');
 const range = document.getElementById('range');
@@ -28,7 +40,7 @@ const setValue = () => {
     range1Indecator = 0;
     $('#points-box').css('opacity', '1');
     $('#points-box').text(newValue);
-    $('#tickContainer').parents('.range-wrap').find('.ticks').css('background', 'linear-gradient(125deg, #BA1417 0%, #CD0800 9.38%, #F45800 18.75%, #FD9113 27.6%, #FFB800 38.02%, #D7E317 48.44%, #D1E01F 60.94%, #EAF65E 71.88%, #00D086 82.29%, #00AB23 91.15%, #056719 100%)');
+    $('#tickContainer').parents('.range-wrap').find('.ticks').css('background', 'linear-gradient(125deg, ' + color0 + ' 0%, ' + color1 +' 9.38%, ' + color2 + ' 18.75%, ' + color3 + ' 27.6%, ' + color4 + ' 38.02%, ' + color5 + ' 48.44%, ' + color6 + ' 60.94%, ' + color7 + ' 71.88%, ' + color8 + ' 82.29%, ' + color9 + ' 91.15%, ' + color10 + ' 100%)');
     $(range).css({
       'width': '128%',
       'margin-left': '-12%'
@@ -38,77 +50,77 @@ const setValue = () => {
     $('#rangeValue').css('transform', 'translateX(-79%)');
     $('#points-box').css({
       'transform': 'translateX(-14px)',
-      'color': '#BA1417'
+      'color': color0
     });
   }
   if (newValue == 1) {
     $('#rangeValue').css('transform', 'translateX(-79%)');
     $('#points-box').css({
       'transform': 'translateX(-12px)',
-      'color': '#CD0800'
+      'color': color1
     });
   }
   if (newValue == 2) {
     $('#rangeValue').css('transform', 'translateX(-79%)');
     $('#points-box').css({
       'transform': 'translateX(-12px)',
-      'color': '#F45800'
+      'color': color2
     });
   }
   if (newValue == 3) {
     $('#rangeValue').css('transform', 'translateX(-74%)');
     $('#points-box').css({
       'transform': 'translateX(-12px)',
-      'color': '#F45800'
+      'color': color3
     });
   }
   if (newValue == 4) {
     $('#rangeValue').css('transform', 'translateX(-72%)');
     $('#points-box').css({
       'transform': 'translateX(-10px)',
-      'color': '#FFB800'
+      'color': color4
     });
   }
   if (newValue == 5) {
     $('#rangeValue').css('transform', 'translateX(-66%)');
     $('#points-box').css({
       'transform': 'translateX(-9px)',
-      'color': '#D7E317'
+      'color': color5
     });
   }
   if (newValue == 6) {
     $('#rangeValue').css('transform', 'translateX(-65%)');
     $('#points-box').css({
       'transform': 'translateX(-8px)',
-      'color': '#D1E01F'
+      'color': color6
     });
   }
   if (newValue == 7) {
     $('#rangeValue').css('transform', 'translateX(-62%)');
     $('#points-box').css({
       'transform': 'translateX(-8px)',
-      'color': '#EAF65E'
+      'color': color7
     });
   }
   if (newValue == 8) {
     $('#rangeValue').css('transform', 'translateX(-56%)');
     $('#points-box').css({
       'transform': 'translateX(-8px)',
-      'color': '#00D086'
+      'color': color8
     });
   }
   if (newValue == 9) {
     $('#rangeValue').css('transform', 'translateX(-56%)');
     $('#points-box').css({
       'transform': 'translateX(-8px)',
-      'color': '#00AB23'
+      'color': color9
     });
   }
   if (newValue == 10) {
     $('#rangeValue').css('transform', 'translateX(-52%)');
     $('#points-box').css({
       'transform': 'translateX(-8px)',
-      'color': '#056719'
+      'color': color10
     });
   }
   if (newValue < 2) {
