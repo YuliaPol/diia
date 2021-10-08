@@ -12,7 +12,7 @@ jQuery(function ($) {
             dots: false,
             animateOut: 'fadeOut',
             animateIn: 'fadeIn',
-            slideSpeed: 1000,
+            slideSpeed: 3000,
             paginationSpeed: 3000,
             // mouseDrag: false,
             // touchDrag: false,
