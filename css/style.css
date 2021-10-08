@@ -298,7 +298,8 @@ body {
           justify-content: center;
 }
 
-.page-wrapper .survey-content .contact-list.owl-carousel {
+.page-wrapper .survey-content .contact-list.owl-carousel,
+.page-wrapper .survey-content .questions-list.owl-carousel {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
@@ -309,7 +310,8 @@ body {
   display: flex;
 }
 
-.page-wrapper .survey-content .contact-list.owl-carousel.owl-carousel .question-wrap {
+.page-wrapper .survey-content .contact-list.owl-carousel.owl-carousel .question-wrap,
+.page-wrapper .survey-content .questions-list.owl-carousel.owl-carousel .question-wrap {
   max-width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -329,10 +331,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+
+.page-wrapper .survey-content .contact-list.owl-carousel.owl-carousel .question-wrap.pd80,
+.page-wrapper .survey-content .questions-list.owl-carousel.owl-carousel .question-wrap.pd80 {
   padding-bottom: 80px;
 }
 
-.page-wrapper .survey-content .contact-list.owl-carousel.owl-carousel .question-wrap .btn-wrap {
+.page-wrapper .survey-content .contact-list.owl-carousel.owl-carousel .question-wrap .btn-wrap,
+.page-wrapper .survey-content .questions-list.owl-carousel.owl-carousel .question-wrap .btn-wrap {
   position: absolute;
   bottom: 0px;
   left: 0px;

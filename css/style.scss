@@ -203,7 +203,8 @@ body {
             flex-direction: column;
             justify-content: center;
         }
-        .contact-list.owl-carousel {
+        .contact-list.owl-carousel,
+        .questions-list.owl-carousel {
             flex: 1 0 auto;
             display: flex;
             &.owl-carousel {
@@ -214,7 +215,10 @@ body {
                     align-items: flex-start;
                     justify-content: center;
                     position: relative;
-                    padding-bottom: 80px;
+                    &.pd80 {
+                        padding-bottom: 80px;
+
+                    }
                     .btn-wrap {
                         position: absolute;
                         bottom: 0px;

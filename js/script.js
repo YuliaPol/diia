@@ -33,7 +33,7 @@ jQuery(function ($) {
             $(thisEl).parents('.question-wrap').find('.btn-next').fadeIn(300);
             $(thisEl).parents('.owl-item').next().find('.question-wrap').removeClass('hidden');
         });
-        $('.question-wrap textarea').change(function(e){
+        $('.question-wrap').on('input', 'textarea', function(e){
             var thisEl = this;
             $(thisEl).parents('.question-wrap').addClass('choosen');
             $(thisEl).parents('.question-wrap').find('.btn-next').fadeIn(300);
