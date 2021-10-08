@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./font/e-Ukraine/stylesheet.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/range.css">
     <link rel="stylesheet" href="./css/style.css?6752346576">
 
     <script src="./js/jquery-3.4.0.min.js"></script>
@@ -21,7 +22,7 @@
                     <img src="./img/logo.svg" alt="Logo">
                 </div>
                 <div class="survey-content">
-                    <form action="#">
+                    <form action="./contact.html">
                         <div class="questions-list owl-carousel">
                             <div class="question-wrap main-question" data-index="1">
                                 <div class="name">
@@ -120,7 +121,10 @@
                                         </label>
                                     </div>
                                     <div class="answer-item">
-                                        <textarea name="q-3-7" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                        <div class="textarea-wrap">
+                                            <textarea name="q-3-7" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                            <span class="line"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="btn-wrap">
@@ -211,7 +215,10 @@
                                         </label>
                                     </div>
                                     <div class="answer-item">
-                                        <textarea name="q-5-9" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                        <div class="textarea-wrap">
+                                            <textarea name="q-5-9" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                            <span class="line"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="btn-wrap">
@@ -272,7 +279,10 @@
                                         </label>
                                     </div>
                                     <div class="answer-item">
-                                        <textarea name="q-7-4" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                        <div class="textarea-wrap">
+                                            <textarea name="q-7-4" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                            <span class="line"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="btn-wrap">
@@ -314,11 +324,21 @@
                                 </div>
                                 <div class="answers-list answers-wd-100">
                                     <div class="answer-item">
-                                        <p>Відсутня потрібна послуга</p>
-                                        <textarea name="q-9-1" rows="1" placeholder="Зазначте, яку або які"></textarea>
+                                        <input type="checkbox" name="q-9-1" id="q-9-1" data-hidden=".answer-9-2"
+                                           class="show-hiden" value="Відсутня потрібна послуга">
+                                        <label for="q-9-1">Відсутня потрібна послуга</label>
+                                    </div>
+                                    <div class="answer-item hidden sub-answer answer-9-2">
+                                        <div class="textarea-wrap">
+                                            <textarea name="q-9-2" rows="1" placeholder="Зазначте, яку або які"></textarea>
+                                            <span class="line"></span>
+                                        </div>
                                     </div>
                                     <div class="answer-item">
-                                        <textarea name="q-9-2" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                        <div class="textarea-wrap">
+                                            <textarea name="q-9-3" rows="1" placeholder="Інше /Зазначте"></textarea>
+                                            <span class="line"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="btn-wrap">
@@ -332,49 +352,70 @@
                                     Чи порекомендуєте ви /назва фронт-офісу/, як основне місце для отримання державних послуг, родичам, друзям, знайомим?
                                 </div>
                                 <div class="answers-list">
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-0">
-                                        <label for="q-10-0">0</label>
+                                    <div class="range-container">
+                                        <div class="range-wrap" id="range-wrapp-1">
+                                            <div class="points-box" id="points-box"></div>
+                                            <div class="point-marcking-wrapper">
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                                <div class="point-marck">
+                                                    <img src="./img/marckingEllipse.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Ticks (lines) over slider -->
+                                            <div class="ticks" id="tickContainer">
+                                            </div>
+                                            <!-- Range value inside of range thumb -->
+                                            <div class="range-value" id="rangeValue">
+                                                <div class="dots">
+                                                    <img src="./img/dots.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- Range itself -->
+                                            <input id="range" class="input-el" type="range" min="0" max="10" value="0.1" step="0.1">
+                                        </div>
+                                        <p class="range-error">Выберите, пожалуйста, причину предыдущей оценки</p>
                                     </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-1">
-                                        <label for="q-10-1">1</label>
+                                    <div class="range-labels">
+                                        <div class="label label-0">
+                                            Категорично не порекомендую
+                                        </div>
+                                        <div class="label label-10 active">
+                                            Обов’язково порекомендую
+                                        </div>
                                     </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-2">
-                                        <label for="q-10-2">2</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-3">
-                                        <label for="q-10-3">3</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-4">
-                                        <label for="q-10-4">4</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-5">
-                                        <label for="q-10-5">5</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-6">
-                                        <label for="q-10-6">6</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-7">
-                                        <label for="q-10-7">7</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-8">
-                                        <label for="q-10-8">8</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-9">
-                                        <label for="q-10-9">9</label>
-                                    </div>
-                                    <div class="answer-item">
-                                        <input type="radio" name="q-10" id="q-10-10">
-                                        <label for="q-10-10">10</label>
+                                    <div class="btn-wrap">
+                                        <div class="btn-next">
+                                            Далі
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -384,7 +425,10 @@
                                 </div>
                                 <div class="answers-list answers-wd-100">
                                     <div class="answer-item">
-                                        <textarea name="q-10" rows="1" placeholder="Зазначте"></textarea>
+                                        <div class="textarea-wrap">
+                                            <textarea name="q-10" rows="1" placeholder="Зазначте"></textarea>
+                                            <span class="line"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="btn-wrap">
@@ -397,12 +441,15 @@
                     </form>
                 </div>
                 <div class="survey-btm">
-                    <div class="line progress-line" style="width: 16%"></div>
+                    <div class="line">
+                        <div class="progress-line"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/range.js"></script>
     <script src="./js/script.js?65746352453647"></script>
 </body>
 </html>

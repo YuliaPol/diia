@@ -3,7 +3,7 @@ jQuery(function ($) {
         if($.fn.owlCarousel){
             var $owl = $('.owl-carousel').owlCarousel({
                 items: 1,
-                margin: 10,
+                margin: 0,
                 loop: false,
                 center: true,
                 stagePadding: 0,
@@ -137,7 +137,7 @@ jQuery(function ($) {
             }
         });
         owl.on('translated.owl.carousel', function(event) {
-            let currentItem = event.relatedTarget['_current'] + 1;
+            let currentItem = event.relatedTarget['_current'];
             let sum =  event.item.count;
             progresLine( sum, currentItem);
         });
@@ -145,14 +145,33 @@ jQuery(function ($) {
             width = (100 / sum)*currentItem + '%';
             $('.progress-line').css('width', width);
         }
+        $('.show-hiden').change(function(e){
+            if($(this).is(':checked')){
+                $($(this).attr('data-hidden')).fadeIn(300);
+            } else {
+                $($(this).attr('data-hidden')).fadeOut(300);
+            }
+        });
 
+        $('.range-container').on('touchstart mousedown', function(e) {
+            // Prevent carousel swipe
+            e.stopPropagation();
+        })
 
-        //set height class 
-        let height = $(document).height();
-        if(height < 550){
-            $('.page-wrapper').addClass('height550');
-        } else if (height < 750){
-            $('.page-wrapper').addClass('height750');
-        }
+        
+        $("textarea").each(function () {
+            this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+        }).on("input", function () {
+            this.style.height = "auto";
+            this.style.height = (this.scrollHeight) + "px";
+        });
+
+        $('.contact-list').on('change', 'input', function(e){
+            $(this).parents('.contact-list').find('.btn-next').html('Надіслати');
+        });
+        $('.contact-list').on('change', 'textarea', function(e){
+            $(this).parents('.contact-list').find('.btn-next').html('Надіслати');
+        })
+
     });
 });
