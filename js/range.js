@@ -16,6 +16,7 @@ let color8 = '#8cdc34';
 let color9 = '#4cd146';
 let color10 = '#04C65D';
 // Position of span that shows range value and tick curve position
+let surveyWidth = $('.questions-list').width();
 const tickContainer = document.querySelector('#range-wrapp-1');
 const range = document.getElementById('range');
 const rangeV = document.getElementById('rangeValue');
@@ -176,22 +177,6 @@ $(range).on('change', function () {
   
   rangeChanging = 1;
   let pointMarks = $('#range-wrapp-1 .point-marck');
-  let pointIndicator = null;
-
-  if (radio2Changing == 0) {
-    let haightSum = $('.header').innerHeight() + $('.q-box-0').innerHeight();
-    $('#survey-container').css('min-height', `calc(${haightSum - 20}px + 100vh)`);
-  }
-
-  if (rangeChanging === 1) {
-    $('.q-box-1').fadeIn();
-
-    let nextPosition = $('.q-box-1').offset().top;
-    console.log(nextPosition);
-    $('html, body').animate({
-      scrollTop: nextPosition
-    }, 500);
-
     // Span position and inner value
     $(this).parents('.range-wrap').find('.ticks').css('background', 'linear-gradient(125deg, #BA1417 0%, #CD0800 9.38%, #F45800 18.75%, #FD9113 27.6%, #FFB800 38.02%, #D7E317 48.44%, #D1E01F 60.94%, #EAF65E 71.88%, #00D086 82.29%, #00AB23 91.15%, #056719 100%)');
     let newValue = Math.round(((range.value - range.min) * 10 / (range.max - range.min) * 1));
@@ -323,9 +308,6 @@ $(range).on('change', function () {
     } else if (newValue > 6) {
       range1Indecator = 1;
     }
-  }
-  console.log('Indicator');
-  console.log(range1Indecator);
 });
 
 $(range).on('input', function () {
