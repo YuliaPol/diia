@@ -137,6 +137,7 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
+  position: relative;
 }
 
 .page-wrapper .start-page .text-block,
