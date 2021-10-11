@@ -88,6 +88,16 @@ body {
             width: 100%;
         }
     }
+    .office-name {
+        font-family: $fontPage;
+        font-size: 14px;
+        line-height: 18px;
+        white-space: nowrap;
+        font-weight: 500;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+    }
     .start-page,
     .last-page {
         height: 100%;
@@ -237,11 +247,13 @@ body {
         }
         .owl-item.active {
             height: 100% !important;
+            opacity: 1;
         }
         .owl-item {
             flex: 1 0 auto;
             display: flex;
             height: 100%;
+            opacity: 0;
         }
         .question-wrap {
             flex: 1 0 auto;

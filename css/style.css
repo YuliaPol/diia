@@ -101,6 +101,17 @@ body {
   width: 100%;
 }
 
+.page-wrapper .office-name {
+  font-family: "e-Ukraine", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 18px;
+  white-space: nowrap;
+  font-weight: 500;
+  position: absolute;
+  top: 40px;
+  right: 35px;
+}
+
 .page-wrapper .start-page,
 .page-wrapper .last-page {
   height: 100%;
@@ -362,6 +373,7 @@ body {
 
 .page-wrapper .survey-content .owl-item.active {
   height: 100% !important;
+  opacity: 1;
 }
 
 .page-wrapper .survey-content .owl-item {
@@ -374,6 +386,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  opacity: 0;
 }
 
 .page-wrapper .survey-content .question-wrap {
