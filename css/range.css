@@ -60,7 +60,9 @@
   /* background: #a3a3a3; */
   z-index: 999;
 }
-
+.range-curve {
+  display: none !important;
+}
 /* Styling the range */
 input[type=range] {
   /* --sw: 100px; */
