@@ -55,7 +55,7 @@
   left: -30px;
   right: -30px;
   height: 50px;
-  -webkit-mask: url('./../img/svg_url.svg') 1% 0/60px 25px, linear-gradient(to right, #fff calc(50% - 60px/2 + 7px), transparent 0 calc(50% + 60px/2 - 2px), #fff 0) right 1% top 20px/calc(200% - 60px) 4px;
+  -webkit-mask: url('./../img/svg_url2.svg') 1% 0/60px 25px, linear-gradient(to right, #fff calc(50% - 60px/2 + 7px), transparent 0 calc(50% + 60px/2 - 2px), #fff 0) right 1% top 20px/calc(200% - 60px) 4px;
   -webkit-mask-repeat: no-repeat;
   /* background: #a3a3a3; */
   z-index: 999;
