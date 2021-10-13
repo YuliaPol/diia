@@ -16,7 +16,7 @@ let color8 = '#8cdc34';
 let color9 = '#4cd146';
 let color10 = '#04C65D';
 // Position of span that shows range value and tick curve position
-let url = "url(./../img/svg_url.svg)";
+let url = "url(../img/svg_url.svg)";
 
 let surveyWidth = $('.questions-list').width();
 const tickContainer = document.querySelector('#range-wrapp-1');
