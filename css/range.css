@@ -2,7 +2,7 @@
   width: 80%;
   margin: 30px auto 0px auto;
   position: relative;
-  --svg: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 66 28' preserveAspectRatio='none' ><path d='M32.9499 4.33333C27.0073 4.33333 21.5581 7.63892 18.8126 12.9092L14.9989 20.2302C12.805 24.4418 8.45044 27.0833 3.70164 27.0833H0.5V22.75H3.70164C6.83499 22.75 9.70819 21.0071 11.1558 18.2282L14.9695 10.9072C18.4613 4.2042 25.3919 0 32.9499 0C40.4058 0 47.26 4.09245 50.7971 10.656L54.8632 18.2013C56.3731 21.0031 59.2989 22.75 62.4816 22.75H65.5V27.0833H62.4816C57.7053 27.0833 53.3144 24.4617 51.0485 20.257L46.9824 12.7117C44.2014 7.55106 38.8121 4.33333 32.9499 4.33333Z' fill='white' stroke-width='4'/></svg>") var(--p, 0) 0;
+  /* --svg: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 66 28' preserveAspectRatio='none' ><path d='M32.9499 4.33333C27.0073 4.33333 21.5581 7.63892 18.8126 12.9092L14.9989 20.2302C12.805 24.4418 8.45044 27.0833 3.70164 27.0833H0.5V22.75H3.70164C6.83499 22.75 9.70819 21.0071 11.1558 18.2282L14.9695 10.9072C18.4613 4.2042 25.3919 0 32.9499 0C40.4058 0 47.26 4.09245 50.7971 10.656L54.8632 18.2013C56.3731 21.0031 59.2989 22.75 62.4816 22.75H65.5V27.0833H62.4816C57.7053 27.0833 53.3144 24.4617 51.0485 20.257L46.9824 12.7117C44.2014 7.55106 38.8121 4.33333 32.9499 4.33333Z' fill='white' stroke-width='4'/></svg>") var(--p, 0) 0; */
 }
 
 .range-container {
@@ -50,25 +50,20 @@
 /* Styling of ticks (lines) over the range */
 .ticks {
   /* control the width of the curve */
-  --sw: 60px;
+  /* --sw: 60px; */
   position: absolute;
   left: -30px;
   right: -30px;
   height: 50px;
-  -webkit-mask: var(--svg) /var(--sw) 25px, linear-gradient(to right, #fff calc(50% - var(--sw)/2 + 7px), transparent 0 calc(50% + var(--sw)/2 - 2px), #fff 0) right var(--p) top 20px/calc(200% - var(--sw)) 4px;
+  -webkit-mask: url('./../img/svg_url.svg') 1% 0/60px 25px, linear-gradient(to right, #fff calc(50% - 60px/2 + 7px), transparent 0 calc(50% + 60px/2 - 2px), #fff 0) right 1% top 20px/calc(200% - 60px) 4px;
   -webkit-mask-repeat: no-repeat;
-  background: #a3a3a3;
+  /* background: #a3a3a3; */
   z-index: 999;
 }
 
-#tickContainer4 {
-  top: 1px;
-}
-
-
 /* Styling the range */
 input[type=range] {
-  --sw: 100px;
+  /* --sw: 100px; */
   /* control the width of the curve */
   -webkit-appearance: none;
   appearance: none;

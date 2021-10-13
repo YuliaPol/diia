@@ -16,6 +16,8 @@ let color8 = '#8cdc34';
 let color9 = '#4cd146';
 let color10 = '#04C65D';
 // Position of span that shows range value and tick curve position
+let url = "url(./../img/svg_url.svg)";
+
 let surveyWidth = $('.questions-list').width();
 const tickContainer = document.querySelector('#range-wrapp-1');
 const range = document.getElementById('range');
@@ -31,7 +33,13 @@ const setValue = () => {
 
 
   // Tick curve position
-  tickContainer.style.setProperty('--p', `calc(${(newValue / 10) * 100}%)`);
+  let newP = (newValue / 10) * 100;
+  newP = newP.toString();
+  let newMaskProperties = `${newP}% 0/60px 25px, linear-gradient(to right, #fff calc(50% - 60px/2 + 7px), transparent 0 calc(50% + 60px/2 - 2px), #fff 0) right ${newP}% top 20px/calc(200% - 60px) 4px`;
+  let newProperties = url + newMaskProperties;
+  $('#tickContainer').css('-webkit-mask', newProperties);
+  $('#tickContainer').css('-webkit-mask-repeat', 'no-repeat');
+  $('#tickContainer').parents('.range-wrap').find('.ticks').css('background', 'linear-gradient(125deg, ' + color0 + ' 0%, ' + color1 +' 9.38%, ' + color2 + ' 18.75%, ' + color3 + ' 27.6%, ' + color4 + ' 38.02%, ' + color5 + ' 48.44%, ' + color6 + ' 60.94%, ' + color7 + ' 71.88%, ' + color8 + ' 82.29%, ' + color9 + ' 91.15%, ' + color10 + ' 100%)');
   $('#points-box').css('left', `calc(${(newValue / 10) * 100}% + (${newPosition}px) )`);
 
   let pointMarks = $('#range-wrapp-1 .point-marck');
@@ -178,14 +186,19 @@ $(range).on('change', function () {
   rangeChanging = 1;
   let pointMarks = $('#range-wrapp-1 .point-marck');
     // Span position and inner value
-    $(this).parents('.range-wrap').find('.ticks').css('background', 'linear-gradient(125deg, #BA1417 0%, #CD0800 9.38%, #F45800 18.75%, #FD9113 27.6%, #FFB800 38.02%, #D7E317 48.44%, #D1E01F 60.94%, #EAF65E 71.88%, #00D086 82.29%, #00AB23 91.15%, #056719 100%)');
     let newValue = Math.round(((range.value - range.min) * 10 / (range.max - range.min) * 1));
     const newPosition = newValue;
     rangeV.style.left = `calc(${(newValue / 10) * 100}% + (${newPosition}px))`;
     $('#points-box').text(newValue);
 
     // Tick curve position
-    tickContainer.style.setProperty('--p', `calc(${(newValue / 10) * 100}%)`);
+    let newP = (newValue / 10) * 100;
+    newP = newP.toString();
+    let newMaskProperties = `${newP}% 0/60px 25px, linear-gradient(to right, #fff calc(50% - 60px/2 + 7px), transparent 0 calc(50% + 60px/2 - 2px), #fff 0) right ${newP}% top 20px/calc(200% - 60px) 4px`;
+    let newProperties = url + newMaskProperties;
+    $('#tickContainer').css('-webkit-mask', newProperties);
+    $('#tickContainer').css('-webkit-mask-repeat', 'no-repeat');
+
     $('#points-box').css('left', `calc(${(newValue / 10) * 100}% + (${newPosition}px) )`);
     console.log(newValue)
     $(range).val(newValue);
